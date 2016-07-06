@@ -1,0 +1,8 @@
+################################################################################
+### we don't need generated sources and ide specific folder in our repository
+################################################################################
+.idea
+.idea/*
+target/*
+target
+*.iml
