@@ -22,6 +22,7 @@
         <!-- plugin versions -->
         <version.maven-compiler-plugin>3.3</version.maven-compiler-plugin>
         <war-plugin-version>2.4</war-plugin-version>
+        <version.jasmine-maven-plugin>2.1</version.jasmine-maven-plugin>
         <!-- dependency versions -->
         <version.javaee-api>7.0</version.javaee-api>
         <version.resteasy-multipart-provider>3.0.16.Final</version.resteasy-multipart-provider>
@@ -50,6 +51,39 @@
                 <version>${war-plugin-version}</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.searls</groupId>
+                <artifactId>jasmine-maven-plugin</artifactId>
+                <version>${version.jasmine-maven-plugin}</version>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>unit-test-running</id>
+                        <goals>
+                            <!-- запустить mojo "test" (есть еще bdd) -->
+                            <goal>test</goal>
+                        </goals>
+                        <!-- запускать на фазе `mvn test` -->
+                        <phase>test</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- где находится корень скриптов приложения -->
+                    <jsSrcDir>src/main/webapp</jsSrcDir>
+                    <!-- где находится корень тестовых спек -->
+                    <jsTestSrcDir>src/test/javascript</jsTestSrcDir>
+                    <!-- куда выгружать результат в surefire формате -->
+                    <jasmineTargetDir>${project.build.directory}/surefire-reports</jasmineTargetDir>
+                    <!-- инстанс какого webdriver поднимать (по умолчанию HtmlUnit, который работает странно) -->
+                    <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>
+                    <!-- эти скрипты необходимо загрузить до выполнения тестов -->
+                    <preloadSources>
+                        <!-- возможны как относительные пути, так и полные урлы -->
+                        <source>src/main/webapp/lib/angular/js/angular.min.js</source>
+                        <source>src/main/webapp/lib/angular/js/angular-mocks.js</source>
+                    </preloadSources>
                 </configuration>
             </plugin>
         </plugins>
