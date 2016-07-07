@@ -41,6 +41,58 @@
         <finalName>bookStore</finalName>
         <plugins>
             <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>1.0</version>
+                <!-- Optional configuration which provides for detect right version of node and npm -->
+                <configuration>
+                    <nodeVersion>v4.4.7</nodeVersion>
+                    <npmVersion>2.15.8</npmVersion>
+                    <karmaConfPath>${project.basedir}/src/test/javascript/karma.conf.ci.js</karmaConfPath>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>install node and npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm run build</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run build</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>bower install</id>
+                        <goals>
+                            <goal>bower</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>javascript tests</id>
+                        <goals>
+                            <goal>karma</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${version.maven-compiler-plugin}</version>
@@ -51,39 +103,6 @@
                 <version>${war-plugin-version}</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.github.searls</groupId>
-                <artifactId>jasmine-maven-plugin</artifactId>
-                <version>${version.jasmine-maven-plugin}</version>
-                <extensions>true</extensions>
-                <executions>
-                    <execution>
-                        <id>unit-test-running</id>
-                        <goals>
-                            <!-- запустить mojo "test" (есть еще bdd) -->
-                            <goal>test</goal>
-                        </goals>
-                        <!-- запускать на фазе `mvn test` -->
-                        <phase>test</phase>
-                    </execution>
-                </executions>
-                <configuration>
-                    <!-- где находится корень скриптов приложения -->
-                    <jsSrcDir>src/main/webapp</jsSrcDir>
-                    <!-- где находится корень тестовых спек -->
-                    <jsTestSrcDir>src/test/javascript</jsTestSrcDir>
-                    <!-- куда выгружать результат в surefire формате -->
-                    <jasmineTargetDir>${project.build.directory}/surefire-reports</jasmineTargetDir>
-                    <!-- инстанс какого webdriver поднимать (по умолчанию HtmlUnit, который работает странно) -->
-                    <webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>
-                    <!-- эти скрипты необходимо загрузить до выполнения тестов -->
-                    <preloadSources>
-                        <!-- возможны как относительные пути, так и полные урлы -->
-                        <source>src/main/webapp/lib/angular/js/angular.min.js</source>
-                        <source>src/main/webapp/lib/angular/js/angular-mocks.js</source>
-                    </preloadSources>
                 </configuration>
             </plugin>
         </plugins>

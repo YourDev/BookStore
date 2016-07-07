@@ -1,0 +1,16 @@
+{
+  "name": "bookstore",
+  "description": "BookStore - test project to use some technologies",
+  "version": "0.0.1",
+  "homepage": "https://github.com/YourDev/BookStore",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.x",
+    "angular-mocks": "1.5.x",
+    "angular-route": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-animate": "1.5.x",
+    "bootstrap": "3.3.x"
+  }
+}

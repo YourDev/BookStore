@@ -1,0 +1,20 @@
+{
+  "name": "BookStore",
+  "version": "0.0.1",
+  "description": "BookStore - test project to use some technologies",
+  "license": "MIT",
+  "repository": "https://github.com/YourDev/BookStore",
+  "dependencies": {
+    "bower": "~1.7.2",
+    "karma": "~0.13.18",
+    "karma-jasmine": "~0.3.6",
+    "karma-phantomjs-launcher": "~0.2.3",
+    "jasmine-core": "^2.4.1",
+    "phantomjs": "^1.9.19",
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "prebuild": "npm install",
+    "build": "gulp"
+  }
+}
