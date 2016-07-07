@@ -1,0 +1,24 @@
+{
+  "name": "The Nest",
+  "id": "the-nest",
+  "description": "Instant New York Times Bestseller \n “Hilarious and big-hearted, The Nest is a stellar debut.” — People, Book of the Week \nHer writing is like really good dark chocolate: sharper and more bittersweet than the cheap stuff, but also too delicious not to finish in one sitting.”— Entertainment Weekly \n“Humor and delightful irony abound in this lively first novel.”— New York Times Book Review",
+  "images": [
+      "img/books/the-nest.0.jpg"
+    ],
+  "category": [
+              "Literature & Fiction"
+              ],
+  "price": "16",
+  "author": [
+            "Cynthia D'Aprix Sweeney"
+            ],
+  "publisher": "Ecco; First Edition first Printing edition",
+  "cover": "Hardcover",
+  "year": "2016",
+  "isbn-10": "0062414216",
+  "isbn-13": "978-0062414212",
+  "language": "English",
+  "pages": "368",
+  "availableOnWarehouse": "99",
+  "rating": "4"
+}

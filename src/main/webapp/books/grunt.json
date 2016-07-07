@@ -1,0 +1,24 @@
+{
+  "name": "Grunt: The Curious Science of Humans at War",
+  "id": "grunt",
+  "description": "Instant New York Times Bestseller \n\"America's funniest science writer\" (Washington Post) Mary Roach explores the science of keeping human beings intact, awake, sane, uninfected, and uninfested in the bizarre and extreme circumstances of war.",
+  "images": [
+      "img/books/grunt.0.jpg"
+    ],
+  "category": [
+              "Anatomy & Physiology"
+              ],
+  "price": "16",
+  "author": [
+            "Mary Roach"
+            ],
+  "publisher": "W. W. Norton & Company",
+  "cover": "Hardcover",
+  "year": "2016",
+  "isbn-10": "0393245446",
+  "isbn-13": "978-0393245448",
+  "language": "English",
+  "pages": "288",
+  "availableOnWarehouse": "52",
+  "rating": "4"
+}
