@@ -15,12 +15,13 @@ module.exports = function(config) {
         reporters: ['progress'],
         port: 9876,
         logLevel: config.LOG_INFO,
-        browsers: ['Chrome'],
+        browsers: ['Chrome', 'Firefox'],
         singleRun: false,
         autoWatch: true,
         plugins: [
             'karma-jasmine',
-            'karma-chrome-launcher'
+            'karma-chrome-launcher',
+            'karma-firefox-launcher'
         ]
     });
 };
