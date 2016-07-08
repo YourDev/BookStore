@@ -1,0 +1,27 @@
+{
+  "name": "The Three Musketeers",
+  "id": "the-three-musketeers",
+  "description": "With its rousing cry of 'One for all, and all for one,' Alexandre Dumas's thrilling adventure novel has captivated generations of readers since its initial publication in 1844. Action, intrigue, and romance abound in this swashbuckling epic, which traces a country lad's path to the French court of the early 1600s and the glorious fraternity of the king's men, the Musketeers.A son of impoverished nobility, D'Artagnan arrives in Paris to find the Musketeers disbanded by the cunning Cardinal Richelieu, who hopes to seize power from the weak-willed Louis XIII. The daring and ambitious youth proves his mettle in the company of the famous Musketeers — Porthos, Athos, and Aramis — and joins them in a heroic struggle to defend the king and his lovely queen, Anne of Austria.Dumas transformed the concept of the historical novel by writing in a modern, conversational style. His accessible, fast-paced narratives combine real and fictional characters to recapture the events, manners, and mood of seventeenth-century France. Emerging in the chaotic aftermath of the Revolution, Dumas's novels provided his contemporaries with a welcome sense of identity and national pride. His most popular work, The Three Musketeers, continues to charm modern readers with its timeless tales of romantic valor.",
+  "images": [
+    "img/phones/the-three-musketeers.0.jpg",
+    "img/phones/the-three-musketeers.1.jpg",
+    "img/phones/the-three-musketeers.2.jpg"
+  ],
+  "category": [
+    "Action & Adventure",
+    "Classics"
+  ],
+  "price": "$5.00",
+  "author": [
+    "Alexandre Dumas"
+  ],
+  "publisher": "Dover Publications",
+  "cover": "Paperback",
+  "year": "2007",
+  "isbn-10": "0486456811",
+  "isbn-13": "978-0486456812",
+  "language": "English",
+  "pages": "560",
+  "availableOnWarehouse": "999",
+  "rating": "maybe"
+}

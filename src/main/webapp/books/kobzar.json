@@ -1,0 +1,27 @@
+{
+  "name": "Kobzar",
+  "id": "kobzar",
+  "description": "Masterfully fulfilled by Peter Fedynsky, Voice of America journalist and expert on Ukrainian studies, this first ever English translation of the complete Kobzar brings out Ukraine's rich cultural heritage.",
+  "images": [
+    "img/phones/kobzar.0.jpg",
+    "img/phones/kobzar.1.jpg",
+    "img/phones/kobzar.2.jpg"
+  ],
+  "category": [
+    "Poetry",
+    "Classics"
+  ],
+  "price": "$34.49",
+  "author": [
+    "Taras Shevchenko"
+  ],
+  "publisher": "Glagoslav Publications Ltd.",
+  "cover": "Hardcover",
+  "year": "2013",
+  "isbn-10": "1909156558",
+  "isbn-13": "978-1909156555",
+  "language": "English",
+  "pages": "452",
+  "availableOnWarehouse": "999",
+  "rating": "maybe"
+}
