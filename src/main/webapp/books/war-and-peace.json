@@ -1,0 +1,27 @@
+{
+  "name": "War and Peace",
+  "id": "war-and-peace",
+  "description": "“There remains the greatest of all novelists—for what else can we call the author of War and Peace?” —Virginia Woolf",
+  "images": [
+    "img/phones/war-and-peace.0.jpg",
+    "img/phones/war-and-peace.1.jpg",
+    "img/phones/war-and-peace.2.jpg"
+  ],
+  "category": [
+    "Action & Adventure",
+    "Classics"
+  ],
+  "price": "$12.19",
+  "author": [
+    "Leo Tolstoy"
+  ],
+  "publisher": "Vintage",
+  "cover": "Hardcover",
+  "year": "2008",
+  "isbn-10": "1400079985",
+  "isbn-13": "978-1400079988",
+  "language": "English",
+  "pages": "1296",
+  "availableOnWarehouse": "999",
+  "rating": "maybe"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "The Iliad",
+  "id": "the-iliad",
+  "description": "Dating to the ninth century B.C., Homer’s timeless poem still vividly conveys the horror and heroism of men and gods wrestling with towering emotions and battling amidst devastation and destruction, as it moves inexorably to the wrenching, tragic conclusion of the Trojan War. Renowned classicist Bernard Knox observes in his superb introduction that although the violence of the Iliad is grim and relentless, it coexists with both images of civilized life and a poignant yearning for peace.",
+  "images": [
+    "img/phones/the-iliad.0.jpg",
+    "img/phones/the-iliad.1.jpg",
+    "img/phones/the-iliad.2.jpg",
+    "img/phones/the-iliad.3.jpg"
+  ],
+  "category": [
+    "Poetry",
+    "Classics"
+  ],
+  "price": "$13.01",
+  "author": [
+    "Homer"
+  ],
+  "publisher": "Penguin Classics",
+  "cover": "Paperback",
+  "year": "1998",
+  "isbn-10": "0140275363",
+  "isbn-13": "978-0140275360",
+  "language": "English",
+  "pages": "704",
+  "availableOnWarehouse": "999",
+  "rating": "maybe"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Politics",
+  "id": "politics",
+  "description": "One of the fundamental works of Western political thought, Aristotle’s masterwork is the first systematic treatise on the science of politics. For almost three decades, Carnes Lord’s justly acclaimed translation has served as the standard English edition. Widely regarded as the most faithful to both the original Greek and Aristotle’s distinctive style, it is also written in clear, contemporary English.",
+  "images": [
+    "img/phones/politics.0.jpg"
+  ],
+  "category": [
+    "Political Science",
+    "Classics"
+  ],
+  "price": "$30.64",
+  "author": [
+    "Aristotle"
+  ],
+  "publisher": "University Of Chicago Press",
+  "cover": "Hardcover",
+  "year": "2013",
+  "isbn-10": "0226921832",
+  "isbn-13": "978-0226921839",
+  "language": "English",
+  "pages": "320",
+  "availableOnWarehouse": "999",
+  "rating": "maybe"
+}

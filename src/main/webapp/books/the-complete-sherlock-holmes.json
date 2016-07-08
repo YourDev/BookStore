@@ -1,0 +1,27 @@
+{
+  "name": "The Complete Sherlock Holmes",
+  "id": "the-complete-sherlock-holmes",
+  "description": "A stunning gift edition boasting the entire Sherlock Holmes catalog including 4 full-length novels and 56 short stories.",
+  "images": [
+    "img/phones/the-complete-sherlock-holmes.0.jpg",
+    "img/phones/the-complete-sherlock-holmes.1.jpg",
+    "img/phones/the-complete-sherlock-holmes.2.jpg"
+  ],
+  "category": [
+    "British Detectives",
+    "Classics"
+  ],
+  "price": "$28.03",
+  "author": [
+    "Arthur Conan Doyle"
+  ],
+  "publisher": "Race Point Publishing",
+  "cover": "Hardcover",
+  "year": "2013",
+  "isbn-10": "1937994309",
+  "isbn-13": "978-1937994303",
+  "language": "English",
+  "pages": "1200",
+  "availableOnWarehouse": "999",
+  "rating": "maybe"
+}
