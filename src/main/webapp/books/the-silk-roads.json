@@ -1,0 +1,24 @@
+{
+  "name": "The Silk Roads: A New History of the World",
+  "id": "the-silk-roads",
+  "description": "“This is history on a grand scale, with a sweep and ambition that is rare… A proper historical epic of dazzling range and achievement.” —William Dalrymple, The Guardian \nThe epic history of the crossroads of the world—the meeting place of East and West and the birthplace of civilization",
+  "images": [
+      "img/books/the-silk-roads.0.jpg"
+    ],
+  "category": [
+              "History"
+              ],
+  "price": "17",
+  "author": [
+            "Peter Frankopan"
+            ],
+  "publisher": "Knopf",
+  "cover": "Hardcover",
+  "year": "2016",
+  "isbn-10": "1101946326",
+  "isbn-13": "978-1101946329",
+  "language": "English",
+  "pages": "672",
+  "availableOnWarehouse": "13",
+  "rating": "5"
+}

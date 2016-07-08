@@ -1,0 +1,24 @@
+{
+  "name": "The Vegetable Butcher: How to Select, Prep, Slice, Dice, and Masterfully Cook Vegetables from Artichokes to Zucchini",
+  "id": "the-vegetable-butcher",
+  "description": "The skills of butchery meet the world of fresh produce in this essential, inspiring guide that demystifies the world of vegetables.\n  In step-by-step photographs, “vegetable butcher” Cara Mangini shows how to break down a butternut squash, cut a cauliflower into steaks, peel a tomato properly, chiffonade kale, turn carrots into coins and parsnips into matchsticks, and find the meaty heart of an artichoke.",
+  "images": [
+      "img/books/the-vegetable-butcher.0.jpg"
+    ],
+  "category": [
+              "Cookbooks, Food & Wine"
+              ],
+  "price": "18",
+  "author": [
+            "Cara Mangini"
+            ],
+  "publisher": "Workman Publishing Company",
+  "cover": "Hardcover",
+  "year": "2016",
+  "isbn-10": "0761180524",
+  "isbn-13": "978-0761180524",
+  "language": "English",
+  "pages": "352",
+  "availableOnWarehouse": "56",
+  "rating": "4"
+}

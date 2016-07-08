@@ -1,0 +1,26 @@
+{
+  "name": "Effective Java",
+  "id": "effective-java",
+  "description": "Are you looking for a deeper understanding of the Java™ programming language so that you can write code that is clearer, more correct, more robust, and more reusable? Look no further! Effective Java™, Second Edition, brings together seventy-eight indispensable programmer’s rules of thumb: working, best-practice solutions for the programming challenges you encounter every day.",
+  "images": [
+      "img/books/effective-java.0.jpg"
+    ],
+  "category": [
+              "Proffesional",
+              "Java",
+              "IT"
+              ],
+  "price": "26",
+  "author": [
+            "Joshua Bloch"
+            ],
+  "publisher": "Addison-Wesley",
+  "cover": "Hardcover",
+  "year": "2008",
+  "isbn-10": "0321356683",
+  "isbn-13": "860-1400000663",
+  "language": "English",
+  "pages": "346",
+  "availableOnWarehouse": "25",
+  "rating": "4"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Head First Java",
+  "id": "head-first-java",
+  "description": "Learning a complex new language is no easy task especially when it s an object-oriented computer programming language like Java. You might think the problem is your brain. It seems to have a mind of its own, a mind that doesn't always want to take in the dry, technical stuff you're forced to study.",
+  "images": [
+      "img/books/head-first-java.0.jpg"
+    ],
+  "category": [
+              "Proffesional",
+              "Java",
+              "IT"
+              ],
+  "price": "26",
+  "author": [
+            "Kathy Sierra",
+            "Bert Bates"
+            ],
+  "publisher": "O`Reilly",
+  "cover": "Hardcover",
+  "year": "2005",
+  "isbn-10": "0596009208",
+  "isbn-13": "978-0596009205",
+  "language": "English",
+  "pages": "688",
+  "availableOnWarehouse": "12",
+  "rating": "2"
+}

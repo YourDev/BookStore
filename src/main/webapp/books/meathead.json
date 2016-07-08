@@ -1,0 +1,25 @@
+{
+  "name": "Meathead: The Science of Great Barbecue and Grilling",
+  "id": "meathead",
+  "description": "For succulent results every time, nothing is more crucial than understanding the science behind the interaction of food, fire, heat, and smoke. This is the definitive guide to the concepts, methods, equipment, and accessories of barbecue and grilling. The founder and editor of the world's most popular BBQ and grilling website, AmazingRibs.com, Meathead applies the latest research to backyard cooking more than 100 thoroughly tested recipes.",
+  "images": [
+      "img/books/meathead.0.jpg"
+    ],
+  "category": [
+              "Cookbooks, Food & Wine",
+              "Barbecuing & Grilling"
+              ],
+  "price": "21",
+  "author": [
+            "Meathead Goldwyn"
+            ],
+  "publisher": "Rux Martin/Houghton Mifflin Harcourt",
+  "cover": "Hardcover",
+  "year": "2016",
+  "isbn-10": "054401846X",
+  "isbn-13": "978-0544018464",
+  "language": "English",
+  "pages": "400",
+  "availableOnWarehouse": "13",
+  "rating": "5"
+}

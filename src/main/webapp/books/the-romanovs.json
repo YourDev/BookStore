@@ -1,0 +1,24 @@
+{
+  "name": "The Romanovs: 1613-1918",
+  "id": "the-romanovs",
+  "description": "The Romanovs were the most successful dynasty of modern times, ruling a sixth of the world’s surface for three centuries. How did one family turn a war-ruined principality into the world’s greatest empire? And how did they lose it all?",
+  "images": [
+      "img/books/the-romanovs.0.jpg"
+    ],
+  "category": [
+              "History"
+              ],
+  "price": "21",
+  "author": [
+            "Simon Sebag Montefiore"
+            ],
+  "publisher": "Knopf",
+  "cover": "Hardcover",
+  "year": "2016",
+  "isbn-10": "0307266524",
+  "isbn-13": "978-0307266521",
+  "language": "English",
+  "pages": "784",
+  "availableOnWarehouse": "7",
+  "rating": "5"
+}
