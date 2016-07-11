@@ -6,3 +6,5 @@ target
 *.iml
 node
 node_modules
+*.log
+*.log.*
