@@ -1,12 +1,7 @@
-angular.module('bookStoreApp').
+//Register the bookList component of the 'bookList' module
+angular.module('bookList').
     component('bookList', {
-    template:
-    '<ul>' +
-    '<li ng-repeat="book in $ctrl.books">' +
-        '<span>{{book.name}}</span>' +
-        '<p>{{book.snippet}}</p>' +
-    '</li>' +
-    '</ul>',
+    templateUrl: 'book-list/book-list.template.html',
     controller: function BookListController(){
         this.books = [
             {

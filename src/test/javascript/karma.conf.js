@@ -8,7 +8,12 @@ module.exports = function(config) {
             'src/main/webapp/lib/angular-resource/angular-resource.min.js',
             'src/main/webapp/lib/angular-animate/angular-animate.min.js',
             'src/main/webapp/lib/angular-mocks/angular-mocks.js',
+            'src/main/webapp/*.module.js',
+            'src/main/webapp/*/*.module.js',
+            'src/main/webapp/*.component.js',
+            'src/main/webapp/*/*.component.js',
             'src/main/webapp/*.js',
+            'src/main/webapp/*/*.js',
             'src/test/javascript/*.js'
         ],
         exclude: ['src/test/javascript/karma.conf*.js'],
