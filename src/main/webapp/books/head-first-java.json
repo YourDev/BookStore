@@ -6,11 +6,11 @@
       "img/books/head-first-java.0.jpg"
     ],
   "category": [
-              "Proffesional",
+              "Professional",
               "Java",
               "IT"
               ],
-  "price": "26",
+  "price": "$26",
   "author": [
             "Kathy Sierra",
             "Bert Bates"
