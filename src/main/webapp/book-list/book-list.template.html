@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-10">
+            <ul class="books">
+                <li ng-repeat="book in $ctrl.books " class="thumbnail">
+                    <a href="#/books/{{book.id}}" class="thumb">
+                        <img ng-src="{{book.imageUrl}}"/>
+                    </a>
+                    <a href="#/books/{{book.id}}">{{book.name}}</a>
+                    <p>{{book.snippet}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

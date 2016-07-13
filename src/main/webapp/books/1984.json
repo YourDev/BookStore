@@ -3,15 +3,14 @@
   "id": "1984",
   "description": "Outside, even through the shut window pane, the world looked cold. Down in the street little eddies of wind were whirling dust and torn paper into spirals, and though the sun was shining and the sky a harsh blue, there seemed to be no color in anything except the posters that were plastered everywhere.",
   "images": [
-    "img/phones/1984.0.jpg",
-    "img/phones/1984.1.jpg",
-    "img/phones/1984.2.jpg"
+    "img/books/1984.0.jpg",
+    "img/books/1984.1.jpg"
   ],
   "category": [
     "Science Fiction",
     "Classics"
   ],
-  "price": " $8.26",
+  "price": "$8.26",
   "author": [
     "George Orwell"
   ],
