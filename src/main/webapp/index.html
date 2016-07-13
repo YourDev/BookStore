@@ -10,12 +10,15 @@
     <script src="lib/angular-animate/angular-animate.min.js"></script>
 
     <script src="app.module.js"></script>
-    <script src="app.directive.js"></script>
-    <script src="app.component.js"></script>
 </head>
-<body>
-<div header></div>
-<div ng-view></div>
-<div footer></div>
+<body ng-controller="BookListController">
+<ul>
+    <li ng-repeat="book in books">
+        <span>{{book.name}}</span>
+        <p>{{book.snippet}}</p>
+    </li>
+</ul>
+<h1>Hello, world</h1>
+<p>Angular test 2+2={{2+2}}</p>
 </body>
 </html>
