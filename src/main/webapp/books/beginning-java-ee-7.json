@@ -3,7 +3,9 @@
   "id": "beginning-java-ee-7",
   "description": "Java Enterprise Edition (Java EE) continues to be one of the leading Java technologies and platforms. Beginning Java EE 7 is the first tutorial book on Java EE 7.",
   "images": [
-    "img/books/beginning-java-ee-7.0.jpg"
+    "img/books/beginning-java-ee-7.0.jpg",
+    "img/books/beginning-java-ee-7.1.jpg",
+    "img/books/beginning-java-ee-7.2.jpg"
   ],
   "category": [
     "Professional",
