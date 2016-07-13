@@ -1,0 +1,279 @@
+[
+  {
+    "name": "Beginning Java EE 7",
+    "id": "beginning-java-ee-7",
+    "imageUrl": "img/books/beginning-java-ee-7.0.jpg",
+    "category": [
+      "Professional",
+      "IT"
+    ],
+    "price": "$42.88",
+    "snippet": "Learn with us",
+    "author": [
+      "Antonio Goncalves"
+    ]
+  },
+  {
+    "name": "1984",
+    "id": "1984",
+    "imageUrl": "img/books/1984.0.jpg",
+    "category": [
+      "Science Fiction",
+      "Classics"
+    ],
+    "price": "$8.26",
+    "snippet": "View our feature on George Orwell's 1984.",
+    "author": [
+      "George Orwell"
+    ]
+  },
+  {
+    "name": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "id": "clean-code",
+    "imageUrl": "img/books/clean-code.0.jpg",
+    "category": [
+      "Professional",
+      "IT"
+    ],
+    "price": "$33",
+    "snippet": "Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees.",
+    "author": [
+      "Robert C. Martin"
+    ]
+  },
+  {
+    "name": "Code Complete",
+    "id": "code-complete",
+    "imageUrl": "img/books/code-complete.0.jpg",
+    "category": [
+      "Professional",
+      "IT"
+    ],
+    "price": "$36",
+    "snippet": "A Practical Handbook of Software Construction",
+    "author": [
+      "Steve McConnell"
+    ]
+  },
+  {
+    "name": "Effective Java",
+    "id": "effective-java",
+    "imageUrl": "img/books/effective-java.0.jpg",
+    "category": [
+      "Professional",
+      "IT"
+    ],
+    "price": "$26",
+    "snippet": "Working, best-practice solutions for the programming challenges you encounter every day.",
+    "author": [
+      "Joshua Bloch"
+    ]
+  },
+  {
+    "name": "Grunt",
+    "id": "grunt",
+    "imageUrl": "img/books/grunt.0.jpg",
+    "category": [
+      "Anatomy & Physiology"
+    ],
+    "price": "$16",
+    "snippet": "The Curious Science of Humans at War",
+    "author": [
+      "Mary Roach"
+    ]
+  },
+  {
+    "name": "Head First Java",
+    "id": "head-first-java",
+    "imageUrl": "img/books/head-first-java.0.jpg",
+    "category": [
+      "Professional",
+      "Java",
+      "IT"
+    ],
+    "price": "$26",
+    "snippet": "Think in right way",
+    "author": [
+      "Kathy Sierra",
+      "Bert Bates"
+    ]
+  },
+  {
+    "name": "Kobzar",
+    "id": "kobzar",
+    "imageUrl": "img/books/kobzar.0.jpg",
+    "category": [
+      "Poetry",
+      "Classics"
+    ],
+    "price": "$34.49",
+    "snippet": "Great ukrainian classic",
+    "author": [
+      "Taras Shevchenko"
+    ]
+  },
+  {
+    "name": "Meathead",
+    "id": "meathead",
+    "imageUrl": "img/books/meathead.0.jpg",
+    "category": [
+      "Cookbooks, Food & Wine",
+      "Barbecuing & Grilling"
+    ],
+    "price": "$21",
+    "snippet": "The Science of Great Barbecue and Grilling",
+    "author": [
+      "Meathead Goldwyn"
+    ]
+  },
+  {
+    "name": "Politics",
+    "id": "politics",
+    "imageUrl": "img/books/politics.0.jpg",
+    "category": [
+      "Political Science",
+      "Classics"
+    ],
+    "price": "$30.64",
+    "snippet": "A Commentary on Aristotle's Politics",
+    "author": [
+      "Aristotle"
+    ]
+  },
+  {
+    "name": "The Complete Sherlock Holmes",
+    "id": "the-complete-sherlock-holmes",
+    "imageUrl": "img/books/the-complete-sherlock-holmes.0.jpg",
+    "category": [
+      "Detective",
+      "Classics"
+    ],
+    "price": "$28.03",
+    "snippet": "Legendary adventures of Sherlock Holmes and his partner Dr.Watson",
+    "author": [
+      "Arthur Conan Doyle"
+    ]
+  },
+  {
+    "name": "The Count of Monte Cristo",
+    "id": "the-count-of-monte-cristo",
+    "imageUrl": "img/books/the-count-of-monte-cristo.0.jpg",
+    "category": [
+      "Action & Adventure",
+      "Classics"
+    ],
+    "price": "$6.00",
+    "snippet": "Classic of world and France literature.",
+    "author": [
+      "Alexandre Dumas"
+    ]
+  },
+  {
+    "name": "The Iliad",
+    "id": "the-iliad",
+    "imageUrl": "img/books/the-iliad.0.jpg",
+    "category": [
+      "Poetry",
+      "Classics"
+    ],
+    "price": "$13.01",
+    "snippet": "First part of epic Homer's tail.",
+    "author": [
+      "Homer"
+    ]
+  },
+  {
+    "name": "The Nest",
+    "id": "the-nest",
+    "imageUrl": "img/books/the-nest.0.jpg",
+    "category": [
+      "Literature & Fiction"
+    ],
+    "price": "$16",
+    "snippet": "Instant New York Times Bestseller",
+    "author": [
+      "Cynthia D'Aprix Sweeney"
+    ]
+  },
+  {
+    "name": "The Odyssey",
+    "id": "the-odyssey",
+    "imageUrl": "img/books/the-odyssey.0.jpg",
+    "category": [
+      "Poetry",
+      "Classics"
+    ],
+    "price": "$3.95",
+    "snippet": "Second part of epic Homer's tail.",
+    "author": [
+      "Homer"
+    ]
+  },
+  {
+    "name": "The Romanovs: 1613-1918",
+    "id": "the-romanovs",
+    "imageUrl": "img/books/the-romanovs.0.jpg",
+    "category": [
+      "History"
+    ],
+    "price": "$21",
+    "snippet": "Historical view on Russian royal dynasty.",
+    "author": [
+      "Simon Sebag Montefiore"
+    ]
+  },
+  {
+    "name": "The Silk Roads",
+    "id": "the-silk-roads",
+    "imageUrl": "img/books/the-silk-roads.0.jpg",
+    "category": [
+      "History"
+    ],
+    "price": "$17",
+    "snippet": "A New History of the World",
+    "author": [
+      "Peter Frankopan"
+    ]
+  },
+  {
+    "name": "The Three Musketeers",
+    "id": "the-three-musketeers",
+    "imageUrl": "img/books/the-three-musketeers.0.jpg",
+    "category": [
+      "Action & Adventure",
+      "Classics"
+    ],
+    "price": "$5.00",
+    "snippet": "Classic of world and France literature.",
+    "author": [
+      "Alexandre Dumas"
+    ]
+  },
+  {
+    "name": "The Vegetable Butcher",
+    "id": "the-vegetable-butcher",
+    "imageUrl": "img/books/the-vegetable-butcher.0.jpg",
+    "category": [
+      "Cookbooks, Food & Wine"
+    ],
+    "price": "$18",
+    "snippet": "How to Select, Prep, Slice, Dice, and Masterfully Cook Vegetables from Artichokes to Zucchini",
+    "author": [
+      "Cara Mangini"
+    ]
+  },
+  {
+    "name": "War and Peace",
+    "id": "war-and-peace",
+    "imageUrl": "img/books/war-and-peace.0.jpg",
+    "category": [
+      "Action & Adventure",
+      "Classics"
+    ],
+    "price": "$12.19",
+    "snippet": "Often called the greatest novel ever written.",
+    "author": [
+      "Leo Tolstoy"
+    ]
+  }
+]
