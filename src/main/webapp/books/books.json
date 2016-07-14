@@ -7,7 +7,7 @@
       "Professional",
       "IT"
     ],
-    "price": "$42.88",
+    "price": 42.88,
     "snippet": "Learn with us",
     "author": [
       "Antonio Goncalves"
@@ -21,7 +21,7 @@
       "Science Fiction",
       "Classics"
     ],
-    "price": "$8.26",
+    "price": 8.26,
     "snippet": "View our feature on George Orwell's 1984.",
     "author": [
       "George Orwell"
@@ -35,7 +35,7 @@
       "Professional",
       "IT"
     ],
-    "price": "$33",
+    "price": 33.00,
     "snippet": "Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees.",
     "author": [
       "Robert C. Martin"
@@ -49,7 +49,7 @@
       "Professional",
       "IT"
     ],
-    "price": "$36",
+    "price": 36.00,
     "snippet": "A Practical Handbook of Software Construction",
     "author": [
       "Steve McConnell"
@@ -63,7 +63,7 @@
       "Professional",
       "IT"
     ],
-    "price": "$26",
+    "price": 26.00,
     "snippet": "Working, best-practice solutions for the programming challenges you encounter every day.",
     "author": [
       "Joshua Bloch"
@@ -76,7 +76,7 @@
     "category": [
       "Anatomy & Physiology"
     ],
-    "price": "$16",
+    "price": 16.00,
     "snippet": "The Curious Science of Humans at War",
     "author": [
       "Mary Roach"
@@ -91,7 +91,7 @@
       "Java",
       "IT"
     ],
-    "price": "$26",
+    "price": 26.00,
     "snippet": "Think in right way",
     "author": [
       "Kathy Sierra",
@@ -106,7 +106,7 @@
       "Poetry",
       "Classics"
     ],
-    "price": "$34.49",
+    "price": 34.49,
     "snippet": "Great ukrainian classic",
     "author": [
       "Taras Shevchenko"
@@ -120,7 +120,7 @@
       "Cookbooks, Food & Wine",
       "Barbecuing & Grilling"
     ],
-    "price": "$21",
+    "price": 21.00,
     "snippet": "The Science of Great Barbecue and Grilling",
     "author": [
       "Meathead Goldwyn"
@@ -134,7 +134,7 @@
       "Political Science",
       "Classics"
     ],
-    "price": "$30.64",
+    "price": 30.64,
     "snippet": "A Commentary on Aristotle's Politics",
     "author": [
       "Aristotle"
@@ -148,7 +148,7 @@
       "Detective",
       "Classics"
     ],
-    "price": "$28.03",
+    "price": 28.03,
     "snippet": "Legendary adventures of Sherlock Holmes and his partner Dr.Watson",
     "author": [
       "Arthur Conan Doyle"
@@ -162,7 +162,7 @@
       "Action & Adventure",
       "Classics"
     ],
-    "price": "$6.00",
+    "price": 6.00,
     "snippet": "Classic of world and France literature.",
     "author": [
       "Alexandre Dumas"
@@ -176,7 +176,7 @@
       "Poetry",
       "Classics"
     ],
-    "price": "$13.01",
+    "price": 13.01,
     "snippet": "First part of epic Homer's tail.",
     "author": [
       "Homer"
@@ -189,7 +189,7 @@
     "category": [
       "Literature & Fiction"
     ],
-    "price": "$16",
+    "price": 16.00,
     "snippet": "Instant New York Times Bestseller",
     "author": [
       "Cynthia D'Aprix Sweeney"
@@ -203,7 +203,7 @@
       "Poetry",
       "Classics"
     ],
-    "price": "$3.95",
+    "price": 3.95,
     "snippet": "Second part of epic Homer's tail.",
     "author": [
       "Homer"
@@ -216,7 +216,7 @@
     "category": [
       "History"
     ],
-    "price": "$21",
+    "price": 21.00,
     "snippet": "Historical view on Russian royal dynasty.",
     "author": [
       "Simon Sebag Montefiore"
@@ -229,7 +229,7 @@
     "category": [
       "History"
     ],
-    "price": "$17",
+    "price": 17.00,
     "snippet": "A New History of the World",
     "author": [
       "Peter Frankopan"
@@ -243,7 +243,7 @@
       "Action & Adventure",
       "Classics"
     ],
-    "price": "$5.00",
+    "price": 5.00,
     "snippet": "Classic of world and France literature.",
     "author": [
       "Alexandre Dumas"
@@ -256,7 +256,7 @@
     "category": [
       "Cookbooks, Food & Wine"
     ],
-    "price": "$18",
+    "price": 18.00,
     "snippet": "How to Select, Prep, Slice, Dice, and Masterfully Cook Vegetables from Artichokes to Zucchini",
     "author": [
       "Cara Mangini"
@@ -270,7 +270,7 @@
       "Action & Adventure",
       "Classics"
     ],
-    "price": "$12.19",
+    "price": 12.19,
     "snippet": "Often called the greatest novel ever written.",
     "author": [
       "Leo Tolstoy"

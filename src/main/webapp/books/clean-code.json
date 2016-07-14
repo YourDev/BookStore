@@ -9,7 +9,7 @@
               "Professional",
               "IT"
               ],
-  "price": "$33",
+  "price": 33.00,
   "author": [
             "Robert C. Martin"
             ],

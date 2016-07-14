@@ -28,6 +28,10 @@ describe('bookList', function(){
 
             expect(ctrl.books.length).toBe(2);
         });
+
+        it('should set default value of orderPop property', function(){
+            expect(ctrl.orderProp).toBe('price');
+        });
     });
 
 });
