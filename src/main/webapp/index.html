@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Book Store</title>
     <link href="app.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-route/angular-route.min.js"></script>
     <script src="lib/angular-resource/angular-resource.min.js"></script>
@@ -11,7 +12,7 @@
 
 
 </head>
-<body ng-controller="bookListController">
+<body>
 <div header></div>
 <div ng-view></div>
 <div footer></div>
@@ -20,9 +21,11 @@
 <script src="app.module.js"></script>
 <script src="app.config.js"></script>
 <script src="app.directive.js"></script>
-<script src="app.component.js"></script>
 <script src="book-list/book-list.module.js"></script>
 <script src="book-list/book-list.controller.js"></script>
 <script src="book-list/book-list.component.js"></script>
+<script src="book-detail/book-detail.module.js"></script>
+<script src="book-detail/book-detail.controller.js"></script>
+<script src="book-detail/book-detail.component.js"></script>
 </body>
 </html>
