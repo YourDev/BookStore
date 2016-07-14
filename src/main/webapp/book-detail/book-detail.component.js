@@ -1,5 +1,6 @@
 angular.module('bookDetail')
     .component('bookDetail', {
         templateUrl: 'book-detail/book-detail.template.html',
-        controller: 'bookDetailController'
+        controller: 'bookDetailController',
+        controllerAs: 'bookDetailCtrl'
     });
