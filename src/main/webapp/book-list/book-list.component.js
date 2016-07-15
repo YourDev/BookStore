@@ -7,6 +7,10 @@ angular.module('bookList').component('bookList', {
         $http.get('books/books.json').then(function (response) {
             self.books = response.data;
         });
+
+        self.setQuery = function(query){
+            self.query = query;
+        }
     }
     ]
 });

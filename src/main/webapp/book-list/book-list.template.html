@@ -22,7 +22,7 @@
                         <img ng-src="{{book.imageUrl}}"/>
                     </a>
                     <a href="#/books/{{book.id}}">{{book.name}}</a>
-                    <p>Author: <span ng-repeat="author in book.author">({{author}}) </span></p>
+                    <p>Author: <span ng-repeat="author in book.author"><a href="" ng-click="$ctrl.setQuery(author)"> {{author}}</a> </span></p><!--После нажатия по автору должен быть поиск всех его книг-->
                     <p>{{book.snippet}}</p>
                     <p>Buy:{{book.price | currency}}</p>
                 </li>

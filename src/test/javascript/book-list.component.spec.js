@@ -17,6 +17,7 @@ describe('bookList', function(){
                 .respond([{name: 'Beginning Java EE 7'}, {name: '1984'}]);
 
             ctrl = $componentController('bookList');
+            ctrl.setQuery('Homer');
         }));
 
 
@@ -31,6 +32,10 @@ describe('bookList', function(){
 
         it('should set default value of orderPop property', function(){
             expect(ctrl.orderProp).toBe('price');
+        });
+
+        it('Should set query for search property', function(){
+           expect(ctrl.query).toBe('Homer');
         });
     });
 
