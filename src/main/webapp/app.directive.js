@@ -6,4 +6,8 @@ angular.module('bookStoreApp')
     .directive('footer', function (){
         return {
             templateUrl: "templates/footer.template.html"};
+    })
+    .directive('sidebar', function (){
+        return {
+            templateUrl: "templates/sidebar.template.html"};
     });
