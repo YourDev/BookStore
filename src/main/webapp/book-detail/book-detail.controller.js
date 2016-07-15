@@ -1,5 +1,5 @@
 angular.module('bookDetail')
-    .controller('bookDetailController', function($http, $routeParams){
+    .controller('bookDetailController', function bookDetailController($http, $routeParams, $scope){
 
         self = this;
 
