@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "name": "Professional"
+  },
+  {
+    "id": 1,
+    "name": "IT"
+  },
+  {
+    "id": 2,
+    "name": "Classics"
+  },
+  {
+    "id": 3,
+    "name": "Science Fiction"
+  },
+  {
+    "id": 4,
+    "name": "Anatomy & Physiology"
+  },
+  {
+    "id": 5,
+    "name": "Java"
+  },
+  {
+    "id": 6,
+    "name": "Poetry"
+  },
+  {
+    "id": 7,
+    "name": "Cookbooks, Food & Wine"
+  },
+  {
+    "id": 8,
+    "name": "Barbecuing & Grilling"
+  },
+  {
+    "id": 9,
+    "name": "Political Science"
+  },
+  {
+    "id": 10,
+    "name": "Detective"
+  },
+  {
+    "id": 11,
+    "name": "Action & Adventure"
+  },
+  {
+    "id": 12,
+    "name": "Literature & Fiction"
+  },
+  {
+    "id": 13,
+    "name": "History"
+  }
+]

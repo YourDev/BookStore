@@ -16,6 +16,9 @@ describe('bookList', function(){
             $httpBackend.expectGET('books/books.json')
                 .respond([{name: 'Beginning Java EE 7'}, {name: '1984'}]);
 
+            $httpBackend.expectGET('categories-list/categories.json')
+                .respond([{name: 'MyCategory'}, {name: 'MyCat2'}, {name: 'MyCat3'}]);
+
             ctrl = $componentController('bookList');
             ctrl.setQuery('Homer');
         }));
@@ -28,6 +31,15 @@ describe('bookList', function(){
             expect(ctrl.books).toEqual([{name: 'Beginning Java EE 7'}, {name: '1984'}]);
 
             expect(ctrl.books.length).toBe(2);
+        });
+
+        it('Should create a category model with 3 categories fetched with "$http"', function(){
+            expect(ctrl.categories).toBeUndefined();
+
+            $httpBackend.flush();
+            expect(ctrl.categories).toEqual([{name: 'MyCategory'}, {name: 'MyCat2'}, {name: 'MyCat3'}]);
+
+            expect(ctrl.categories.length).toBe(3);
         });
 
         it('should set default value of orderPop property', function(){
