@@ -1,5 +1,5 @@
 body {
-    padding-top: 2%;
+    padding: 2%;
 }
 
 .header{
@@ -10,23 +10,23 @@ body {
 .sidebar{
     width: 20%;
     height: 68%;
+    padding-right: 1%;
     float: left;
-    position: fixed;
+    position: static;
 }
 
 .content{
-    width: 80%;
-    height: 68%;
     margin-left: 20%;
 }
 
 .footer {
     width: 100%;
-    height: 20%;
+    height: 10%;
+    clear: both;
 }
 
 .sidebar input{
-    width:100%;
+    width:96%;
 }
 
 .thumb{

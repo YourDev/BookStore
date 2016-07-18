@@ -1,7 +1,9 @@
 angular.module('bookList')
-    .controller('bookListController', function bookListController($http){
-        var self = this;//can't refer to this in callback func, that why create separate variable
+    .controller('bookListController', function bookListController($http, $scope){
+        $scope.$root.allBooks;
         $http.get('books/books.json').success(function (data) {
-            self.books = data;
+            $scope.$root.allBooks = data;
+            $scope.$root.books = data;
+            console.log($scope.$root.books);
         });
     });

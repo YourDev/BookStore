@@ -1,9 +1,11 @@
-<div class="content" ng-repeat="book in $ctrl.books">
-    <ul>
-        <a href="#/books/{{book.id}}">
-            <img ng-src="{{book.imageUrl}}" class="thumb"/>
-            <br>{{book.name}}</a>
-        <p>{{book.snippet}}</p>
-    </ul>
+<div class="content">
+    <div ng-repeat="book in $root.books">
+        <ul>
+            <a href="#/books/{{book.id}}">
+                <img ng-src="{{book.imageUrl}}" class="thumb"/>
+                <br>{{book.name}}</a>
+            <p>{{book.snippet}}</p>
+        </ul>
+    </div>
 </div>
 
