@@ -11,8 +11,13 @@
                     <option value="price">Price</option>
                 </select>
             </p>
+            <p>
+                <button ng-click="$ctrl.setCategory('')">
+                    Reset categories
+                </button>
+            </p>
             <div class="navmenu navmenu-default">
-                <ul class="nav navmenu-nav" ng-model="$ctrl.categoryFilter">
+                <ul class="nav navmenu-nav">
                     <li ng-repeat="category in $ctrl.categories | orderBy: $ctrl.orderCategoryProp">
                         <a href="" ng-click="$ctrl.setCategory(category.name)">{{category.name}}</a>
                     </li>
@@ -24,7 +29,8 @@
         <div class="col-md-10">
             <!--Body content-->
             <ul class="books">
-                <li ng-repeat="book in $ctrl.books | filter:$ctrl.query | booksCategory: $ctrl.categoryFilter | orderBy:$ctrl.orderProp" class="thumbnail">
+                <li ng-repeat="book in $ctrl.books | filter:$ctrl.query | booksCategory: $ctrl.categoryFilter | orderBy:$ctrl.orderProp"
+                    class="thumbnail">
                     <a href="#/books/{{book.id}}" class="thumb">
                         <img ng-src="{{book.imageUrl}}"/>
                     </a>
