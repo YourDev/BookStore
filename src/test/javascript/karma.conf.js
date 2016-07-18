@@ -10,6 +10,8 @@ module.exports = function(config) {
             'src/main/webapp/lib/angular-mocks/angular-mocks.js',
             'src/main/webapp/*.module.js',
             'src/main/webapp/*/*.module.js',
+            'src/main/webapp/*.filter.js',
+            'src/main/webapp/*/*.filter.js',
             'src/main/webapp/*.component.js',
             'src/main/webapp/*/*.component.js',
             'src/main/webapp/*.js',

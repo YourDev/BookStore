@@ -4,6 +4,7 @@ angular.module('bookList').component('bookList', {
     controller: ['$http', function BookListController($http) {
         var self = this;
         self.orderProp = 'price';//can't refer to this in callback func, that why create separate variable
+        self.categoryFilter = '';//can't refer to this in callback func, that why create separate variable
 
         self.orderCategoryProp = 'name';//can't refer to this in callback func, that why create separate variable
 
@@ -17,6 +18,10 @@ angular.module('bookList').component('bookList', {
 
         self.setQuery = function (query) {
             self.query = query;
+        };
+
+        self.setCategory = function (category) {
+            self.categoryFilter = category;
         }
     }
     ]

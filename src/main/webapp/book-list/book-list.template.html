@@ -12,9 +12,9 @@
                 </select>
             </p>
             <div class="navmenu navmenu-default">
-                <ul class="nav navmenu-nav">
+                <ul class="nav navmenu-nav" ng-model="$ctrl.categoryFilter">
                     <li ng-repeat="category in $ctrl.categories | orderBy: $ctrl.orderCategoryProp">
-                        <a href="" ng-click="$ctrl.setQuery(category.name)">{{category.name}}</a>
+                        <a href="" ng-click="$ctrl.setCategory(category.name)">{{category.name}}</a>
                     </li>
                 </ul>
             </div>
@@ -24,13 +24,15 @@
         <div class="col-md-10">
             <!--Body content-->
             <ul class="books">
-                <li ng-repeat="book in $ctrl.books | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+                <li ng-repeat="book in $ctrl.books | filter:$ctrl.query | booksCategory: $ctrl.categoryFilter | orderBy:$ctrl.orderProp" class="thumbnail">
                     <a href="#/books/{{book.id}}" class="thumb">
                         <img ng-src="{{book.imageUrl}}"/>
                     </a>
                     <a href="#/books/{{book.id}}">{{book.name}}</a>
                     <p>Author: <span ng-repeat="author in book.author"><a href="" ng-click="$ctrl.setQuery(author)">
-                        {{author}}</a> </span></p>
+                        {{author}}</a> </span>
+                    </p>Category: <span ng-repeat="category in book.category">
+                        <a href="" ng-click="$ctrl.setCategory(category)">({{category}})</a> </span></p>
                     <p>{{book.snippet}}</p>
                     <p>Buy:{{book.price | currency}}</p>
                 </li>
