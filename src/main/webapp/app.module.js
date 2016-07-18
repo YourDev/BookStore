@@ -1,1 +1,1 @@
-angular.module('bookStoreApp', ['bookList', 'core']);
+angular.module('bookStoreApp', ['bookList', 'core', 'ngRoute', 'bookDetail']);
