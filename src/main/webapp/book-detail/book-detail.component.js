@@ -1,7 +1,10 @@
 angular.module('bookDetail').component('bookDetail', {
-    template: 'This is detail Page for <span> {{$ctrl.bookId}}</span>',
-    controller: ['$routeParams', function bookDetailController($routeParams) {
-        this.bookId = $routeParams.bookId;//take this from app.config.js
+    templateUrl: 'book-detail/book-detail.template.html',
+    controller: ['$routeParams', '$http', function bookDetailController($routeParams, $http) {
+        var self = this;
+        $http.get('books/' + $routeParams.bookId + '.json').then(function (response) {
+            self.book = response.data;
+        });
     }
     ]
 });

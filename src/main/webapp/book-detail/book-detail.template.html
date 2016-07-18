@@ -1,0 +1,42 @@
+<img ng-src="{{$ctrl.book.images[0]}}" class="book"/>
+
+<h1>{{$ctrl.book.name}}</h1>
+<p><span>Buy: {{$ctrl.book.price | currency}}</span></p>
+<p>{{$ctrl.book.description}}</p>
+
+<ul>
+    <li>
+        <span>Publisher:</span> {{$ctrl.book.publisher}}
+    </li>
+    <li>
+        <span>Cover:</span> {{$ctrl.book.cover}}
+    </li>
+    <li>
+        <span>Year:</span> {{$ctrl.book.year}}
+    </li>
+    <li>
+        <span>ISBN-10:</span> {{$ctrl.book.isbn-10}}
+    </li>
+    <li>
+        <span>ISBN-13:</span> {{$ctrl.book.isbn-13}}
+    </li>
+    <li>
+        <span>Language:</span> {{$ctrl.book.language}}
+    </li>
+    <li>
+        <span>Pages:</span> {{$ctrl.book.pages}}
+    </li>
+    <li>
+        <span>Available on warehouse:</span> {{$ctrl.book.availableOnWarehouse}}
+    </li>
+    <li>
+        <span>Rating:</span> {{$ctrl.book.rating}}
+    </li>
+</ul>
+
+
+<ul class="book-thumbs">
+    <li ng-repeat="img in $ctrl.book.images">
+        <img ng-src="{{img}}"/>
+    </li>
+</ul>
