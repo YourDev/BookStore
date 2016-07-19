@@ -1,10 +1,16 @@
-<img ng-src="{{$ctrl.book.images[0]}}" class="book"/>
+<img ng-src="{{$ctrl.mainImageUrl}}" class="book"/>
 
 <h1>{{$ctrl.book.name}}</h1>
-<p><span>Buy: {{$ctrl.book.price | currency}}</span></p>
+<p><span class="price">Buy: {{$ctrl.book.price | currency}}</span></p>
 <p>{{$ctrl.book.description}}</p>
 
-<ul>
+<ul class="book-thumbs">
+    <li ng-repeat="img in $ctrl.book.images">
+        <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)"/>
+    </li>
+</ul>
+
+<ul class="specs">
     <li>
         <span>Publisher:</span> {{$ctrl.book.publisher}}
     </li>
@@ -34,9 +40,3 @@
     </li>
 </ul>
 
-
-<ul class="book-thumbs">
-    <li ng-repeat="img in $ctrl.book.images">
-        <img ng-src="{{img}}"/>
-    </li>
-</ul>

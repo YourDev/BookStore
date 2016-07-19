@@ -5,7 +5,11 @@ describe('bookDetail', function () {
 
     describe('bookDetailController', function () {
         //Test controller
-        var $httpBackend, ctrl;
+        var $httpBackend, ctrl,
+        xyzBookData = {
+            name: 'book xyz',
+            images: ['image/url1.jpg', 'image/url2.jpg']
+        };
 
         // The injector ignores leading and trailing underscores here (i.e. _$httpBackend_).
         // This allows us to inject a service and assign it to a variable with the same name
@@ -13,7 +17,7 @@ describe('bookDetail', function () {
         beforeEach(inject(function ($componentController, _$httpBackend_, $routeParams) {
             $httpBackend = _$httpBackend_;
             $httpBackend.expectGET('books/xyz.json')
-                .respond({name: 'book xyz'});
+                .respond(xyzBookData);
             $routeParams.bookId = 'xyz';
 
             ctrl = $componentController('bookDetail');
@@ -23,7 +27,7 @@ describe('bookDetail', function () {
             expect(ctrl.book).toBeUndefined();
 
             $httpBackend.flush();
-            expect(ctrl.book).toEqual({name: 'book xyz'});
+            expect(ctrl.book).toEqual(xyzBookData);
         });
 
     });
