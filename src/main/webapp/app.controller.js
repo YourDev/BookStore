@@ -7,6 +7,33 @@ angular.module('bookStoreApp')
         $scope.input = 'search...';
         $scope.inBookFlag = false;
 
+        $scope.$root.searchByAuthor = function(author){
+            $scope.nameFlag = false;
+            $scope.priceFlag = false;
+            $scope.authorFlag = true;
+            $scope.categoryFlag = false;
+            $scope.input = author;
+            $scope.search(author);
+        };
+
+        $scope.$root.searchByPrice = function(price){
+            $scope.nameFlag = false;
+            $scope.priceFlag = true;
+            $scope.authorFlag = false;
+            $scope.categoryFlag = false;
+            $scope.input = price;
+            $scope.search(price);
+        };
+
+        $scope.$root.searchByCategory = function (category){
+            $scope.nameFlag = false;
+            $scope.priceFlag = false;
+            $scope.authorFlag = false;
+            $scope.categoryFlag = true;
+            $scope.putDefaultToInput();
+            $scope.search(category);
+        };
+
         booksInfo.get().then(function(response){
             $scope.allBooks = response.data;
         });
@@ -22,14 +49,6 @@ angular.module('bookStoreApp')
         $scope.checkInputText = function(){
             if($scope.input === '') $scope.input = 'search...';
             else if($scope.input === 'search...') $scope.input = '';
-        };
-
-        $scope.searchCategory = function (link){
-            $scope.nameFlag = false;
-            $scope.priceFlag = false;
-            $scope.authorFlag = false;
-            $scope.categoryFlag = true;
-            $scope.search(link);
         };
 
         $scope.search = function(text){
@@ -52,9 +71,9 @@ angular.module('bookStoreApp')
                         if($scope.allBooks[i].author[j].match(new RegExp(text, 'i'))) $scope.books.push($scope.allBooks[i]);
                     }
                 if($scope.nameFlag && $scope.allBooks[i].name.match(new RegExp(text, 'i'))) $scope.books.push($scope.allBooks[i]);
-                if($scope.priceFlag && text.charAt(0) === '$') {
-                    text = text.substring(1,text.length);
-                    if($scope.allBooks[i].price.match(new RegExp('^\\$'+text+'\\.'))) $scope.books.push($scope.allBooks[i]);
+                if($scope.priceFlag) {
+                    if(text.charAt(0) === '$') text = text.substring(1,text.length);
+                    if($scope.allBooks[i].price.match(new RegExp('^\\$'+text+'\\.*\\d*'))) $scope.books.push($scope.allBooks[i]);
                 }
             }
             var uniqueBooks = $scope.books.filter(function(elem, pos) {

@@ -8,7 +8,7 @@
     <h3>Categories:</h3>
     <ul>
         <li ng-repeat="link in categories">
-            <a href="#/books" ng-click="putDefaultToInput();searchCategory(link)">{{link}}</a>
+            <a href="#/books" ng-click="$root.searchByCategory(link)">{{link}}</a>
         </li>
     </ul>
 </div>
