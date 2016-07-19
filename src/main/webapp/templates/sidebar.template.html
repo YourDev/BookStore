@@ -7,6 +7,9 @@
     <label><input type="checkbox" ng-model="priceFlag" ng-change="search(input)">prices</label>
     <h3>Categories:</h3>
     <ul>
+        <li>
+            <a href="#/books" ng-click="search('')">View all</a>
+        </li>
         <li ng-repeat="link in categories">
             <a href="#/books" ng-click="$root.searchByCategory(link)">{{link}}</a>
         </li>

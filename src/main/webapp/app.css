@@ -12,7 +12,13 @@ body {
     height: 68%;
     padding-right: 1%;
     float: left;
-    position: static;
+    position: fixed;
+}
+
+.sidebar-wrapper{
+    min-height: 350pt;
+    width: 20%;
+    float: left;
 }
 
 .content{
