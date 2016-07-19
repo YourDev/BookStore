@@ -1,10 +1,11 @@
 angular.module('bookStoreApp')
-    .controller('sidebarController', function sidebarController($http, $scope, $window, booksInfo, categoriesInfo){
+    .controller('sidebarController', function sidebarController($http, $scope, $location, booksInfo, categoriesInfo){
         $scope.nameFlag = true;
-        $scope.categoryFlag = true;
         $scope.priceFlag = true;
         $scope.authorFlag = true;
+        $scope.categoryFlag = true;
         $scope.input = 'search...';
+        $scope.inBookFlag = false;
 
         booksInfo.get().then(function(response){
             $scope.allBooks = response.data;
@@ -14,19 +15,29 @@ angular.module('bookStoreApp')
              $scope.categories = response.data.categories;
         });
 
-        $scope.putToInput = function (link){
-            $scope.input = link;
+        $scope.putDefaultToInput = function (){
+            if ($scope.input != 'search...') $scope.input = 'search...';
         };
 
         $scope.checkInputText = function(){
             if($scope.input === '') $scope.input = 'search...';
             else if($scope.input === 'search...') $scope.input = '';
-            $scope.search($scope.input);
+        };
+
+        $scope.searchCategory = function (link){
+            $scope.nameFlag = false;
+            $scope.priceFlag = false;
+            $scope.authorFlag = false;
+            $scope.categoryFlag = true;
+            $scope.search(link);
         };
 
         $scope.search = function(text){
             $scope.books = [];
             if(text === '' || text === 'search...') {
+                if($scope.inBookFlag) {
+                    $location.path($scope.oldURL);
+                }
                 $scope.$root.books = $scope.allBooks;
                 return;
             }
@@ -49,7 +60,32 @@ angular.module('bookStoreApp')
             var uniqueBooks = $scope.books.filter(function(elem, pos) {
                 return $scope.books.indexOf(elem) == pos;
             });
-            if($window.location != '#/books') $window.location = '#/books';
+            if($location.url().match('\/books\/.*') || $location.url() === '/books-search'){
+                $location.path('/books-search');
+            }
+            else if($location.url() != '#/books') $location.path('/books');
             $scope.$root.books = uniqueBooks;
         };
+
+        $scope.searchInBook = function(){
+            if($location.url().match('\/books\/.*')){
+                $scope.inBookFlag = true;
+                $scope.nameFlag = true;
+                $scope.priceFlag = true;
+                $scope.authorFlag = true;
+                $scope.categoryFlag = true;
+                $scope.oldURL = $location.url();
+                if($scope.input != '') $scope.putDefaultToInput();
+            }
+            else if($location.url() === '/books'){
+                $scope.inBookFlag = false;
+                $scope.oldURL = undefined;
+            }
+        };
+
+        $scope.searchInBook();
+
+        $scope.$on('$locationChangeSuccess', function() {
+            $scope.searchInBook();
+        });
     });
