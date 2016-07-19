@@ -1,14 +1,11 @@
 angular.module('bookDetail')
     .controller('bookDetailController', function bookDetailController($http, $routeParams, $scope){
-
-        self = this;
-
         $scope.changeImg = function (img){
-            self.titleImage = img;
+            $scope.titleImage = img;
         };
 
         $http.get('books/'+$routeParams.bookId+'.json').success(function(data){
-            self.book = data;
-            self.titleImage = self.book.images[0];
+            $scope.book = data;
+            $scope.titleImage = $scope.book.images[0];
         });
     });
