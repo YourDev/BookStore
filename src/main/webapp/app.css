@@ -95,7 +95,7 @@ h1 {
     bottom: 0em;
     left: 0em;
     width: 100%;
-    height: 3.5em;
+    height: 5%;
     color: white;
     background: black;
     padding: 1em 1em 1em 1em;
@@ -110,6 +110,7 @@ h1 {
     font-size: 1.0em;
 }
 #headerTop{
+    height: 5%;
     border-style: solid;
     border-bottom-color: red;
     border-width: 0 0 0.1em 0;
