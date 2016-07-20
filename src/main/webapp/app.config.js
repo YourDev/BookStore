@@ -3,11 +3,26 @@ angular.module('bookStoreApp').config([
         function config($locationProvider, $routeProvider) {
             $locationProvider.hashPrefix('!');
 
-            $routeProvider.when('/books', {
+            $routeProvider
+            .when('/books', {
                 template: '<book-list></book-list>'
-            }).when('/books/:bookId', {
+            })
+            .when('/books/:bookId', {
                 template: '<book-detail></book-detail>'
-            }).otherwise('/books');
+            })
+            .when('/about', {
+                template: '<about-us></about-us>'
+            })
+            .when('/contacts', {
+                template: '<contacts></contacts>'
+            })
+            .when('/wishList', {
+                template: '<wish-list></wish-list>'
+            })
+            .when('/cart', {
+                template: '<cart></cart>'
+            })
+            .otherwise('/books');
         }
     ])
 
