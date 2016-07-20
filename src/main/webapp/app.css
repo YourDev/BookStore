@@ -8,6 +8,7 @@ h1 {
 
 .container-fluid{
     padding-top: 3em;
+    padding-bottom: 3em;
     position: relative;
 }
 
