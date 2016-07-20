@@ -1,4 +1,6 @@
-<img ng-src="{{$ctrl.mainImageUrl}}" class="book"/>
+<div class="container-fluid">
+<div class="row">
+    <img ng-src="{{$ctrl.mainImageUrl}}" class="book"/>
 
 <h1>{{$ctrl.book.name}}</h1>
 <p><span class="price">Buy: {{$ctrl.book.price | currency}}</span></p>
@@ -39,4 +41,5 @@
         <span>Rating:</span> {{$ctrl.book.rating}}
     </li>
 </ul>
-
+</div>
+</div>

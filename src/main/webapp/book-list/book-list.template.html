@@ -3,19 +3,26 @@
 
         <div class="col-md-2">
             <!--Sidebar content-->
-            Search: <input ng-model="$ctrl.query">
-            <p>
-                Sort by:
-                <select ng-model="$ctrl.orderProp">
-                    <option value="name">Alphabetical</option>
-                    <option value="price">Price</option>
-                </select>
-            </p>
-            <p>
-                <button ng-click="$ctrl.setCategory('')">
-                    All categories
-                </button>
-            </p>
+            <form role="form">
+                <div class="form-group">
+
+                    <label for="search">Search</label>
+                    <input class="form-control" id="search" ng-model="$ctrl.query">
+
+                    <p>
+                        <label for="sorter">Sort by:</label>
+                        <select class="form-control" id="sorter" ng-model="$ctrl.orderProp">
+                            <option value="name">Alphabetical</option>
+                            <option value="price">Price</option>
+                        </select>
+                    </p>
+                </div>
+                <p>
+                    <button type="button" class="btn btn-default btn-md" ng-click="$ctrl.setCategory('')">
+                        All categories
+                    </button>
+                </p>
+            </form>
             <div class="navmenu navmenu-default">
                 <ul class="nav navmenu-nav">
                     <li ng-repeat="category in $ctrl.categories | orderBy: $ctrl.orderCategoryProp">
