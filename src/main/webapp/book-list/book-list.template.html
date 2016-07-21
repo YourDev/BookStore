@@ -1,11 +1,8 @@
-<div class="content">
-    <div ng-repeat="book in $root.books">
-        <ul>
-            <a href="#/books/{{book.id}}">
-                <img ng-src="{{book.imageUrl}}" class="thumb"/>
-                <br>{{book.name}}</a>
-            <p>{{book.snippet}}</p>
-        </ul>
+<div>
+    <div ng-repeat="book in $root.books" class="single_image">
+        <a href="#/books/{{book.id}}">
+            <img ng-src="{{book.imageUrl}}"/>
+            <h2><span>{{book.name}} <br /><i>{{book.snippet | limitTo:40}}...</i></span></h2>
+        </a>
     </div>
 </div>
-

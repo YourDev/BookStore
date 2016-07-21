@@ -1,16 +1,10 @@
 <div class="sidebar">
-    <input ng-model="input" ng-change="search(input)" ng-focus="checkInputText()" ng-blur="checkInputText()" id="search-input"/>
-    <b>Search by: </b><br>
-    <label><input type="checkbox" ng-model="nameFlag" ng-change="search(input)">book names</label>
-    <label><input type="checkbox" ng-model="authorFlag" ng-change="search(input)">authors</label>
-    <label><input type="checkbox" ng-model="categoryFlag" ng-change="search(input)">categories</label>
-    <label><input type="checkbox" ng-model="priceFlag" ng-change="search(input)">prices</label>
-    <h3>Categories:</h3>
-    <ul>
-        <li>
+    <h3>Categories:</h3><br/>
+    <ul class="navigation">
+        <li class="nav-item">
             <a href="#/books" ng-click="search('')">View all</a>
         </li>
-        <li ng-repeat="link in categories">
+        <li class="nav-item" ng-repeat="link in categories">
             <a href="#/books" ng-click="$root.searchByCategory(link)">{{link}}</a>
         </li>
     </ul>

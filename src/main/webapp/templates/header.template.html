@@ -1,7 +1,17 @@
-<div class="header">
-    <a href="index.html#/">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="wishlist.html">Wish List</a>
-    <a href="cart.html">Cart</a>
+<div class="header" ng-controller="sidebarController">
+    <div class="header_navigation">
+        <a href="index.html#/">Home</a>
+        <a href="#about.html">About Us</a>
+        <a href="#contacts.html">Contacts</a>
+        <a href="#wishlist.html">Wish List</a>
+        <a href="#cart.html">Cart</a>
+    </div>
+    <div class="search">
+        <input ng-model="input" ng-change="search(input)" ng-focus="checkInputText()" ng-blur="checkInputText()" id="search-input"/>
+        <b>Search by: </b>
+        <label><input type="checkbox" ng-model="nameFlag" ng-change="search(input)">book names</label>
+        <label><input type="checkbox" ng-model="authorFlag" ng-change="search(input)">authors</label>
+        <label><input type="checkbox" ng-model="categoryFlag" ng-change="search(input)">categories</label>
+        <label><input type="checkbox" ng-model="priceFlag" ng-change="search(input)">prices</label>
+    </div>
 </div>
