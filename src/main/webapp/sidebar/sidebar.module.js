@@ -1,1 +1,3 @@
-angular.module('sidebar', []);
+angular.module('sidebar', [
+    'ngRoute'
+]);
