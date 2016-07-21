@@ -1,0 +1,27 @@
+<div class="sidebar">
+    <div class="search">
+        <input ng-model="input" ng-change="search(input)" ng-focus="checkInputText()" ng-blur="checkInputText()"
+               id="search-input"/>
+        <b>Search by: </b>
+        <label><input type="checkbox" ng-model="nameFlag" ng-change="search(input)">book names</label>
+        <label><input type="checkbox" ng-model="authorFlag" ng-change="search(input)">authors</label>
+        <label><input type="checkbox" ng-model="categoryFlag" ng-change="search(input)">categories</label>
+        <label><input type="checkbox" ng-model="priceFlag" ng-change="search(input)">prices</label>
+    </div>
+    <div>
+        <b>Sort by:</b>
+        <select class="form-control" id="sorter" ng-model="$root.orderProp">
+            <option value="name" ng-click="$root.showOrderProp()">Alphabetical</option>
+            <option value="price" ng-click="$root.showOrderProp()">Price</option>
+        </select>
+    </div>
+    <h3>Categories:</h3><br/>
+    <ul class="navigation">
+        <li class="nav-item">
+            <a href="#!/books" ng-click="search('')">View all</a>
+        </li>
+        <li class="nav-item" ng-repeat="link in categories">
+            <a href="#!/books" ng-click="$root.searchByCategory(link.name)">{{link.name}}</a>
+        </li>
+    </ul>
+</div>
