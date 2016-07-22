@@ -15,7 +15,7 @@
                         <img ng-src="{{book.imageUrl}}"/>
                         <div id="price_label">
                             <img src="img/resources/price-label.png"/>
-                            <label ng-click="$root.searchByPrice(book.price)">${{book.price}} </label>
+                            <label>{{book.price | currency}} </label>
                         </div>
                         <span>{{book.name}} </span>
                     </a>

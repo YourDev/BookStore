@@ -80,7 +80,7 @@ angular.module('sidebar')
                 if($scope.priceFlag) {
                     if(text.charAt(0) === '$') text = text.substring(1, text.length);
                     if(text.indexOf('.') != -1) text = text.substring(0, text.indexOf('.'));
-                    if(($scope.allBooks[i].price+'').match(new RegExp('^'+text+"(\\.\\d*)?$"))) $scope.books.push($scope.allBooks[i]);
+                    if($scope.allBooks[i].price.toString().match(new RegExp('^'+text+"(\\.\\d*)?$"))) $scope.books.push($scope.allBooks[i]);
                 }
             }
             var uniqueBooks = $scope.books.filter(function(elem, pos) {
