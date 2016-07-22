@@ -25,10 +25,10 @@
         <span class="navbar-brand" >Categories:</span>
     <ul class="nav navbar-nav">
         <li class="nav-item">
-            <a href="#/books" ng-click="search('')">View all</a>
+            <a href="#!/books" ng-click="search('')">View all</a>
         </li>
         <li class="nav-item" ng-repeat="link in categories">
-            <a href="#/books" ng-click="$root.searchByCategory(link.name)">{{link.name}}</a>
+            <a href="#!/books" ng-click="$root.searchByCategory(link.name)">{{link.name}}</a>
         </li>
     </ul>
         </div>

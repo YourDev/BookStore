@@ -34,6 +34,10 @@ angular.module('sidebar')
             $scope.categoryFlag = true;
             $scope.putDefaultToInput();
             $scope.search(category);
+            $scope.nameFlag = true;
+            $scope.priceFlag = true;
+            $scope.authorFlag = true;
+            $scope.categoryFlag = true;
         };
 
         booksInfo.get().then(function(response){
@@ -85,7 +89,7 @@ angular.module('sidebar')
             if($location.url().match('\/books\/.*') || $location.url() === '/books-search'){
                 $location.path('/books-search');
             }
-            else if($location.url() != '#/books') $location.path('/books');
+            else if($location.url() != '/books') $location.path('/books');
             $scope.$root.books = uniqueBooks;
         };
 

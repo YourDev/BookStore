@@ -7,6 +7,9 @@ angular.module('bookStoreApp').config([
             .when('/books', {
                 template: '<book-list></book-list>'
             })
+            .when('/books-search', {
+                template: '<book-list></book-list>'
+            })
             .when('/books/:bookId', {
                 template: '<book-detail></book-detail>'
             })
