@@ -37,14 +37,14 @@ h1 {
 .nav-item a {
     height: 40px;
     display:block;
-    text-decoration:none;
+    text-decoration: none;
     color: #FFFFFF;
     font-size: 1.5rem;
     text-align: justify;
 }
 
 .nav-item a:hover {
-    color: #7f09e6;
+    color: #ff0000;
     font-weight: bold;
     background-color: #E0E0E0;
     transition: color 0.3s, background 0.5s, font-weight 0.1s;
@@ -79,35 +79,50 @@ h1 {
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
+
 .single_image:hover{
-    border-color: #ff0000;
-    border-style: solid;
-    border-width: 0.1em;
+    border: 0.1em solid #ff0000;
+    color: #ff0000
 }
+
+.single_image div#price_label img{
+    height: 50px;
+    width: 100px;
+}
+
+.single_image div#price_label{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 50px;
+    width: 100px;
+}
+
+.single_image label{
+    color: #FFFFFF;
+    font: bold 22px/45px Helvetica, Sans-Serif;
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+.single_image span:hover{
+    color: #ff0000;
+}
+
 .single_image span{
     color: #FFFFFF;
     font: bold 22px/45px Helvetica, Sans-Serif;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
     letter-spacing: -1px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-}
-
-.single_image a>img{
-    flex-shrink:1;
-    min-width:100%;
-    min-height:100%
-}
-
-.single_image h2 span:hover {
-    color: #7f09e6;
-}
-
-.single_image h2{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* View: Book detail */
