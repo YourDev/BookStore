@@ -10,7 +10,7 @@
         <div class="col-md-offset-3">
             <!--Body content-->
             <div>
-                <div ng-repeat="book in $root.books" class="single_image">
+                <div ng-repeat="book in $root.books | orderBy: $root.orderProp" class="single_image">
                     <a href="#!/books/{{book.id}}">
                         <img ng-src="{{book.imageUrl}}"/>
                         <h2><span>{{book.name}} <br /><i>{{book.snippet | limitTo:40}}...</i></span></h2>

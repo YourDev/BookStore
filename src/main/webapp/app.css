@@ -15,22 +15,19 @@ h1 {
 /*sidebar view*/
 .sidebar{
     width: 20%;
+    border-color: red;
     float: left;
     position: fixed;
     top: 6%;
     z-index: 90;
     overflow: auto;
 }
-
-.sidebar h3{
-    color: #7f09e6;
-}
-
-.navigation {
+.navbar-fixed-left {
     width: 100%;
-    list-style: none;
-    padding-left: 0;
-    padding-right: 5%;
+    height: 60rem;
+    margin-top: 2%;
+    float: left;
+    overflow: auto;
 }
 
 .nav-item {
@@ -41,7 +38,8 @@ h1 {
     height: 40px;
     display:block;
     text-decoration:none;
-    font-size: 2rem;
+    color: white;
+    font-size: 1.5rem;
     text-align: justify;
 }
 
