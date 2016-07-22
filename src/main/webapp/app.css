@@ -54,6 +54,17 @@ h1 {
 .search > input:focus, .search > select:focus {
     border-color: #ff0000;
 }
+/*categories list*/
+.sidebar .navbar-inverse{
+    background-color: #000000;
+    border-style: solid;
+    border-color: #ff0000;
+    border-width: 0.1em;
+}
+
+.sidebar .navbar-inverse .navbar-nav > li > a {
+    color: #FFFFFF;
+}
 
 /* View: Book list */
 .single_image {
