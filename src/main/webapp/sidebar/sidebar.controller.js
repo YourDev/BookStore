@@ -74,8 +74,9 @@ angular.module('sidebar')
                     }
                 if($scope.nameFlag && $scope.allBooks[i].name.match(new RegExp(text, 'i'))) $scope.books.push($scope.allBooks[i]);
                 if($scope.priceFlag) {
-                    if(text.charAt(0) === '$') text = text.substring(1,text.length);
-                    if($scope.allBooks[i].price.match(new RegExp(text+'\\.*\\d*'))) $scope.books.push($scope.allBooks[i]);
+                    if(text.charAt(0) === '$') text = text.substring(1, text.length);
+                    if(text.indexOf('.') != -1) text = text.substring(0, text.indexOf('.'));
+                    if(($scope.allBooks[i].price+'').match(new RegExp('^'+text+"(\\.\\d*)?$"))) $scope.books.push($scope.allBooks[i]);
                 }
             }
             var uniqueBooks = $scope.books.filter(function(elem, pos) {
