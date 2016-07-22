@@ -13,7 +13,11 @@
                 <div ng-repeat="book in $root.books | orderBy: $root.orderProp" class="single_image">
                     <a href="#!/books/{{book.id}}">
                         <img ng-src="{{book.imageUrl}}"/>
-                        <h2><span>{{book.name}} <br /><i>{{book.snippet | limitTo:40}}...</i></span></h2>
+                        <div id="price_label">
+                            <img src="img/resources/price-label.png"/>
+                            <label ng-click="$root.searchByPrice(book.price)">{{book.price | currency}} </label>
+                        </div>
+                        <span>{{book.name}} </span>
                     </a>
                 </div>
             </div>
