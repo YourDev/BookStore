@@ -225,3 +225,9 @@ h1 {
 .navbar-bluesy .nav > li > a:focus, .navbar-bluesy .nav > li > a:hover {
     background-color: red;
 }
+
+/*googleMaps container*/
+#googleMap {
+    width:500px;
+    height:380px;
+}
