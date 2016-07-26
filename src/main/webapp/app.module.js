@@ -1,6 +1,7 @@
-angular.module('bookStoreApp', ['bookList',
-    'core',
+angular.module('bookStoreApp', [
     'ngRoute',
+    'bookList',
+    'core',
     'bookDetail',
     'aboutUs',
     'contacts',

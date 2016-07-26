@@ -1,1 +1,1 @@
-angular.module('aboutUs', []);
+angular.module('aboutUs', ['ngAnimate', 'ui.bootstrap']);
