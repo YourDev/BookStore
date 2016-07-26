@@ -11,6 +11,9 @@
     "angular-route": "1.5.x",
     "angular-resource": "1.5.x",
     "angular-animate": "1.5.x",
-    "bootstrap": "3.3.x"
+    "bootstrap": "3.3.x",
+    "angular-google-maps": "2.3.2",
+    "lodash": "4.14.x",
+    "angular-simple-logger": "0.1.x"
   }
 }

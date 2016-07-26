@@ -29,6 +29,15 @@ angular.module('bookStoreApp').config([
         }
     ])
 
+    .config(function(uiGmapGoogleMapApiProvider) {
+        uiGmapGoogleMapApiProvider.configure({
+            key: 'AIzaSyCDxt1ieQTrY8c4YMslke6EIseWOCFyLTs',
+            //v: '3.20', //defaults to latest 3.X anyhow
+            libraries: 'weather,geometry,visualization',
+            china: true
+        });
+    })
+
     .directive("footer", function () {
         return {
             restrict: "A",

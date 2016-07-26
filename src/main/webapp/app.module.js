@@ -6,5 +6,6 @@ angular.module('bookStoreApp', ['bookList',
     'contacts',
     'wishList',
     'cart',
-    'sidebar'
+    'sidebar',
+    'uiGmapgoogle-maps'
 ]);

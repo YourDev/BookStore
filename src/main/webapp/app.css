@@ -225,3 +225,9 @@ h1 {
 .navbar-bluesy .nav > li > a:focus, .navbar-bluesy .nav > li > a:hover {
     background-color: red;
 }
+
+/*map view*/
+.angular-google-map-container {
+    height: 30em;
+    width:  30em;
+}

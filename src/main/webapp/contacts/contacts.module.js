@@ -1,1 +1,3 @@
-angular.module('contacts', []);
+angular.module('contacts', [
+    'uiGmapgoogle-maps'
+]);
