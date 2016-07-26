@@ -1,7 +1,9 @@
 <div class="container-fluid">
     <div class="row col-md-offset-3">
         <h1>This is Contacts Page!!!</h1>
-        <ui-gmap-google-map center='$ctrl.map.center' zoom='$ctrl.map.zoom'>
+        <ui-gmap-google-map center='$ctrl.map.center' zoom='$ctrl.map.zoom' options="$ctrl.map.options">
+            <ui-gmap-marker coords="$ctrl.marker.coords" options="$ctrl.marker.options" events="$ctrl.marker.events" idkey="$ctrl.marker.id">
+            </ui-gmap-marker>
         </ui-gmap-google-map>
     </div>
 
