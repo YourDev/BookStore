@@ -1,12 +1,10 @@
-angular.module('bookDetail').controller('bookDetailController', function bookDetailController($routeParams, $http) {
-    var self = this;
-
-    self.setImage = function(imageUrl){
-        self.mainImageUrl = imageUrl;
+angular.module('bookDetail').controller('bookDetailController', function bookDetailController($scope, $routeParams, dataService) {
+    $scope.setImage = function(imageUrl){
+        $scope.mainImageUrl = imageUrl;
     };
 
-    $http.get('books/' + $routeParams.bookId + '.json').then(function (response) {
-        self.book = response.data;
-        self.setImage(self.book.images[0]);
+    dataService.getBook($routeParams.bookId).then(function(book){
+        $scope.book = book;
+        $scope.setImage($scope.book.images[0]);
     });
 });

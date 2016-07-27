@@ -1,7 +1,7 @@
 angular.module('bookList')
-    .controller('bookListController', function bookListController($http, $scope, booksInfo){
+    .controller('bookListController', function bookListController($scope, dataService){
         if(typeof $scope.$root.books === 'undefined')
-            booksInfo.get().then(function (response) {
-                $scope.$root.books = response.data;
+            dataService.getBooks().then(function(books){
+                $scope.$root.books = books;
             });
     });

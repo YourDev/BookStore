@@ -1,12 +1,20 @@
 angular.module('sidebar')
-    .controller('sidebarController', function sidebarController($http, $scope, $location, booksInfo, categoriesInfo){
+    .controller('sidebarController', function sidebarController($scope, $location, dataService){
         $scope.$root.orderProp = 'price';
+        $scope.input = 'search...';
+
+        dataService.getBooks().then(function(books){
+            $scope.allBooks = books;
+        });
+
+        dataService.getCategories().then(function(categories){
+            $scope.categories = categories;
+        });
 
         $scope.nameFlag = true;
         $scope.priceFlag = true;
         $scope.authorFlag = true;
         $scope.categoryFlag = true;
-        $scope.input = 'search...';
         $scope.inBookFlag = false;
 
         $scope.$root.searchByAuthor = function(author){
@@ -39,14 +47,6 @@ angular.module('sidebar')
             $scope.authorFlag = true;
             $scope.categoryFlag = true;
         };
-
-        booksInfo.get().then(function(response){
-            $scope.allBooks = response.data;
-        });
-
-        categoriesInfo.get().then (function(response){
-            $scope.categories = response.data;
-        });
 
         $scope.putDefaultToInput = function (){
             if ($scope.input != 'search...') $scope.input = 'search...';
