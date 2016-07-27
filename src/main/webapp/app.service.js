@@ -1,27 +1,22 @@
 angular.module('bookStoreApp')
-    .factory('dataService', ['$http', '$q', function($http, $q){
+    .factory('dataService', ['$http', '$q', function($http){
         return {
             getBooks: function(){
-                var deffered = $q.defer();
-                $http.get('books/books.json').success(function(data){
-                    deffered.resolve(data);
+                return $http.get('books/books.json').then(function(books){
+                    return books.data;
                 });
+            },
 
-                return deffered.promise;
-            },
             getBook: function(bookId){
-                var deffered = $q.defer();
-                $http.get('books/' + bookId + '.json').success(function(data){
-                   deffered.resolve(data);
+                return $http.get('books/' + bookId + '.json').then(function(book){
+                    return book.data;
                 });
-                return deffered.promise;
             },
+
             getCategories: function(){
-                var deffered = $q.defer();
-                $http.get('categories-list/categories.json').success(function(data){
-                    deffered.resolve(data);
+                return $http.get('categories-list/categories.json').then(function(categories){
+                    return categories.data;
                 });
-                return deffered.promise;
             }
         }
     }]);
