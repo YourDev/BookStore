@@ -1,10 +1,95 @@
 <div class="container-fluid">
     <div class="row col-md-offset-3">
-        <h1>This is Contacts Page!!!</h1>
-        <ui-gmap-google-map center='$ctrl.map.center' zoom='$ctrl.map.zoom' options="$ctrl.map.options">
-            <ui-gmap-marker coords="$ctrl.marker.coords" options="$ctrl.marker.options" events="$ctrl.marker.events" idkey="$ctrl.marker.id">
-            </ui-gmap-marker>
-        </ui-gmap-google-map>
+        <header class="title-page">Contacts</header>
+        <div class="content-container col-md-6">
+            <article class="row">
+                <div class="content-inner-left-container col-md-6">
+                    <h2>Visit us</h2>
+                    <p><i>ulitsa Severo-Syretskaya, 1, Kyiv</i></p>
+                </div>
+                <div class="content-inner-right-container col-md-6">
+                    <h2>Work hours</h2>
+                    <p class="regular-day"><b>Monday - Friday:</b>
+                        <br>
+                        <span class="work-hours">10:00 - 22:00</span>
+                    </p>
+                    <p class="regular-day"><b>Saturday:</b>
+                        <br>
+                        <span class="work-hours">12:00 - 18:00</span>
+                    </p>
+                    <p class="day-off"><b>Sunday:</b>
+                        <br>
+                        <span class="work-hours">day off</span>
+                    </p>
+                </div>
+            </article>
+            <article class="row contact-article">
+                <div class="content-inner-left-container col-md-6">
+                    <h2>Call us</h2>
+                    <ul>
+                        <li><img src="img/resources/Logo_lifecell.png"/><b>(093) 445-11-00</b></li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/resources/Vodafone_logo.png"/><b>(050) 445-11-00</b></li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/resources/KyivStar_logo.png"/><b>(066) 445-11-00</b></li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/resources/skype.png"/><b>YourBook</b></li>
+                    </ul>
+                </div>
+                <div class="content-inner-right-container col-md-6">
+                    <h2>Work hours</h2>
+                    <p class="regular-day"><b>Monday - Friday:</b>
+                        <br>
+                        <span class="work-hours">10:00 - 22:00</span>
+                    </p>
+                    <p class="regular-day"><b>Saturday:</b>
+                        <br>
+                        <span class="work-hours">12:00 - 18:00</span>
+                    </p>
+                    <p class="day-off"><b>Sunday:</b>
+                        <br>
+                        <span class="work-hours">day off</span>
+                    </p>
+                </div>
+            </article>
+            <article class="row contact-article">
+                <div class="content-inner-left-container col-md-6">
+                    <h2>Find us in web</h2>
+                    <ul>
+                        <li><img src="img/resources/facebook.png"/><a href="https://www.facebook.com">facebook.com/yourbook/</a></li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/resources/vk.jpg"/><a href="https://www.vk.com">vk.com/yourbook/</a></li>
+                    </ul>
+                </div>
+                <div class="content-inner-right-container col-md-6">
+                    <h2>Work hours</h2>
+                    <p class="regular-day"><b>Monday - Friday:</b>
+                        <br>
+                        <span class="work-hours">10:00 - 22:00</span>
+                    </p>
+                    <p class="regular-day"><b>Saturday:</b>
+                        <br>
+                        <span class="work-hours">12:00 - 18:00</span>
+                    </p>
+                    <p class="day-off"><b>Sunday:</b>
+                        <br>
+                        <span class="work-hours">day off</span>
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="map-container col-md-6">
+            <ui-gmap-google-map center='$ctrl.map.center' zoom='$ctrl.map.zoom' options="$ctrl.map.options">
+                <ui-gmap-marker coords="$ctrl.marker.coords" options="$ctrl.marker.options"
+                                events="$ctrl.marker.events" idkey="$ctrl.marker.id">
+                </ui-gmap-marker>
+            </ui-gmap-google-map>
+        </div>
     </div>
 
 </div>

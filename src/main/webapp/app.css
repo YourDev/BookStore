@@ -12,6 +12,65 @@ h1 {
     position: relative;
 }
 
+/*Structure of the inner content of the pages*/
+.title-page{
+    display: block;
+    border-bottom: 1px solid #ff0000;
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2em;
+    text-decoration: double;
+}
+
+/*map view*/
+.map-container{
+    width: 100%;
+    height: 30em;
+}
+
+div.map-container{
+    padding-right: 0;
+    padding-left: 0;
+    border: 1px solid #ff0000;
+}
+
+.angular-google-map, .angular-google-map-container {
+    width: 100%;
+    height: 100%;
+}
+
+/*content view*/
+.content-inner-right-container{
+    border-left: 1px solid #ff0000;
+}
+
+.content-inner-left-container img{
+    display: inline;
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+}
+
+.content-inner-left-container ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.day-off{
+    color: #cc0000;
+}
+
+.work-hours{
+    font-size: 1.5em;
+}
+
+.contact-article{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+
 /*sidebar view*/
 .sidebar{
     width: 20%;
@@ -224,10 +283,4 @@ h1 {
 
 .navbar-bluesy .nav > li > a:focus, .navbar-bluesy .nav > li > a:hover {
     background-color: red;
-}
-
-/*map view*/
-.angular-google-map-container {
-    height: 30em;
-    width:  30em;
 }
