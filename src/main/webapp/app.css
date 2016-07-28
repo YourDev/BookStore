@@ -183,9 +183,23 @@ h1 {
 }
 
 /*add to favorite in detail-view*/
-.favorite{
+.favorite img{
     height: 30px;
     width: 30px;
+}
+
+.favorite.ng-enter, .favorite.ng-leave {
+    transition: cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.favorite.ng-enter,
+.favorite.ng-leave.ng-leave-active {
+    opacity:0;
+}
+
+.favorite.ng-leave,
+.favorite.ng-enter.ng-enter-active {
+    opacity:1;
 }
 
 /*Header and footer*/

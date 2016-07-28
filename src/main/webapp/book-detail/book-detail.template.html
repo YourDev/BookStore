@@ -3,7 +3,10 @@
         <img ng-src="{{mainImageUrl}}" class="book"/>
 
         <h1>{{book.name}}</h1>
-        <p><a href="#"><img src="img/resources/heart.jpg" class="favorite"/> Add to favorite</a></p>
+        <p><a href="" ng-click="addBookToWishList()" ng-if="ngIfFlag" class="favorite">
+            <img src="img/resources/heart.jpg"/> Add to favorite
+        </a>
+        </p>
         <p><span class="price">Buy: {{book.price | currency}}</span></p>
         <p>{{book.description}}</p>
 
