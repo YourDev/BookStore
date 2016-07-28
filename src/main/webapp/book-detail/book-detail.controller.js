@@ -6,13 +6,9 @@ angular.module('bookDetail').controller('bookDetailController', function bookDet
     };
 
     $scope.checkWishlist = function(){
-        for(var i=0;i<$scope.$root.wishlist.length;i++){
-            if($scope.$root.wishlist[i].id === $scope.book.id) {
-                $scope.ngIfFlag = false;
-                return;
-            }
-        }
-        $scope.ngIfFlag = true;
+        $scope.ngIfFlag = $scope.$root.wishlist.find(function (book) {
+                return $scope.book.id === book.id;
+            }) === undefined;
     };
 
     $scope.addBookToWishList = function(){
