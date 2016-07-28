@@ -7,6 +7,7 @@ angular.module('wishList').component('wishList', {
             var index = $scope.$root.wishlist
                 .indexOf($scope.$root.wishlist.find(function(book){return id === book.id}));
             $scope.$root.wishlist.splice(index, 1);
+            if($scope.$root.wishlist.length === 0) $scope.ngIfFlag = false;
         };
     }
     ]
