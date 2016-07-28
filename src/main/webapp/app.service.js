@@ -1,5 +1,5 @@
 angular.module('bookStoreApp')
-    .factory('dataService', ['$http', '$q', function($http){
+    .factory('dataService', ['$http', function($http){
         return {
             getBooks: function(){
                 return $http.get('books/books.json').then(function(books){
