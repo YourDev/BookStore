@@ -23,11 +23,10 @@ angular.module('contacts').component('contacts', {
            }
        ];
 
-       var ourPosition = {lat: 50.490802, lng:  30.412595};
+       var ourPosition = {lat: 50.490223, lng:  30.413712};
 
        var map = new google.maps.Map(document.getElementById("googleMap"),{
            center: ourPosition,
-           scrollwheel: false,
            styles: styleArray,
            zoom: 10
        });
