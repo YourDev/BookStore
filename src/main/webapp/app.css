@@ -182,20 +182,25 @@ h1 {
     font-weight: bold;
 }
 
+/*add to favorite in detail-view*/
+.favorite{
+    height: 30px;
+    width: 30px;
+}
+
 /*Header and footer*/
 
 .fixedfooter {
     position: fixed;
-    bottom: 0em;
-    left: 0em;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 5%;
     color: #FFFFFF;
     background: #000000;
     padding: 1em 1em 1em 1em;
-    border-style: solid;
-    border-top-color: #ff0000;
-    border-width: 0.1em 0 0 0;
+    border: 0 solid;
+    border-top: 0.1em #ff0000;
 }
 
 .copyright {
@@ -205,9 +210,8 @@ h1 {
 }
 #headerTop{
     height: 5%;
-    border-style: solid;
-    border-bottom-color: #ff0000;
-    border-width: 0 0 0.1em 0;
+    border: 0 solid;
+    border-bottom: 0.1em #ff0000;
 }
 .navbar-bluesy {
     color: #FFFFFF;
