@@ -249,3 +249,17 @@ h1 {
     width:500px;
     height:380px;
 }
+
+/*Wishlist*/
+.single_image div#delete_label img{
+    height: 50px;
+    width: 50px;
+}
+
+.single_image div#delete_label{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 50px;
+    width: 50px;
+}

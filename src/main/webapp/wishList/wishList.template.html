@@ -14,6 +14,11 @@
                         <img src="img/resources/price-label.png"/>
                         <label>{{book.price | currency}} </label>
                     </div>
+                    <div id="delete_label">
+                        <a href="" ng-click="deleteBook(book.id)">
+                            <img src="img/resources/delete-icon.png"/>
+                        </a>
+                    </div>
                     <span>{{book.name}} </span>
                 </a>
             </div>
