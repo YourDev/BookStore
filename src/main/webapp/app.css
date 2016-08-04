@@ -135,6 +135,7 @@ h1 {
     margin-right: 3em;
     padding: 2em;
     width: 400px;
+    object-fit: cover;
 }
 
 .price {
