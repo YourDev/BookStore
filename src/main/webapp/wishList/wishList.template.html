@@ -5,9 +5,9 @@
             <h3>There is no books in your wish list, please, add some.</h3>
         </div>
         <div ng-if="ngIfFlag">
-            <h3 ng-if="$root.wishlist.length === 1">In your wish list {{$root.wishlist.length}} book:</h3>
-            <h3 ng-if="$root.wishlist.length != 1">In your wish list {{$root.wishlist.length}} books:</h3>
-            <div ng-repeat="book in $root.wishlist" class="single_image">
+            <h3 ng-if="books.length === 1">In your cart {{books.length}} book. Total price is: ${{books[0].price}}</h3>
+            <h3 ng-if="books.length != 1">In your cart {{books.length}} books.  Total price is: ${{totalPrice}}</h3>
+            <div ng-repeat="book in books" class="single_image">
                 <a href="#!/books/{{book.id}}">
                     <img ng-src="{{book.images[0]}}"/>
                     <div id="price_label">

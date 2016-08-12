@@ -1,13 +1,13 @@
 angular.module('wishList').component('wishList', {
     templateUrl: 'wishList/wishList.template.html',
-    controller: ['$scope', function wishListController($scope){
-        if($scope.$root.wishlist != undefined) $scope.ngIfFlag = true;
+    controller: ['$scope', 'wishListService', function wishListController($scope, wishListService){
+        $scope.books = wishListService.getBooks();
+        $scope.totalPrice = wishListService.getTotalPrice();
+        $scope.ngIfFlag = $scope.books.length !=0;
 
         $scope.deleteBook = function(id){
-            var index = $scope.$root.wishlist
-                .indexOf($scope.$root.wishlist.find(function(book){return id === book.id}));
-            $scope.$root.wishlist.splice(index, 1);
-            if($scope.$root.wishlist.length === 0) $scope.ngIfFlag = false;
+            wishListService.deleteBook(id);
+            $scope.ngIfFlag = $scope.books.length != 0;
         };
     }
     ]
