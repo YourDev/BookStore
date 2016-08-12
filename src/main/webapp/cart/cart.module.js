@@ -1,1 +1,1 @@
-angular.module('cart', []);
+angular.module('cart', ['ngAnimate', 'ui.bootstrap']);
