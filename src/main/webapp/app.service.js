@@ -19,4 +19,62 @@ angular.module('bookStoreApp')
                 });
             }
         }
+     }])
+
+    .factory('cartService', [function(){
+        var books = [];
+        return {
+            getBooks: function(){
+                return books;
+            },
+
+            getTotalPrice: function(){
+                var sum = 0;
+                books.forEach(function(book){sum += book.price;})
+                return sum;
+            },
+
+            addBook: function(book){
+                books.push(book);
+            },
+
+            deleteBook: function(id){
+                var lengthBefore = books.length;
+                var index = books
+                    .indexOf(books.find(function(book){return id === book.id}));
+                books.splice(index, 1);
+                var lengthAfter = books.length;
+                if(lengthBefore === lengthAfter) return false;
+                else return true;
+            }
+        }
+    }])
+
+    .factory('wishListService', [function(){
+        var books = [];
+        return {
+            getBooks: function(){
+                return books;
+            },
+
+            getTotalPrice: function(){
+                var sum = 0;
+                books.forEach(function(book){sum += book.price;});
+                return sum;
+            },
+
+            addBook: function(book){
+                books.push(book);
+            },
+
+            deleteBook: function(id){
+                var lengthBefore = books.length;
+                var index = books
+                    .indexOf(books.find(function(book){return id === book.id}));
+                books.splice(index, 1);
+                var lengthAfter = books.length;
+                if(lengthBefore === lengthAfter) return false;
+                else return true;
+            }
+        }
     }]);
