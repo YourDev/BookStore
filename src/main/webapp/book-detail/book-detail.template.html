@@ -3,8 +3,12 @@
         <img ng-src="{{mainImageUrl}}" class="book"/>
 
         <h1>{{book.name}}</h1>
-        <p><a href="" ng-click="addBookToWishList()" ng-if="ngIfFlag" class="favorite">
+        <p><a href="" ng-click="addBookToWishList()" ng-if="wishListFlag" class="favorite">
             <img src="img/resources/heart.jpg"/> Add to favorite
+        </a>
+        </p>
+        <p><a href="" ng-click="addBookToCart(book.id)" ng-if="cartFlag" class="favorite">
+            <img src="img/resources/cart-add-icon.png"/> Add to cart
         </a>
         </p>
         <p><span class="price">Buy: {{book.price | currency}}</span></p>
